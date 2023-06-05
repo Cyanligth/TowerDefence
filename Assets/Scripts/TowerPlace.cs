@@ -17,7 +17,10 @@ public class TowerPlace : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("asdfasdf");
+        if (eventData.button == PointerEventData.InputButton.Left)
+            Debug.Log("좌클릭");
+        else if (eventData.button == PointerEventData.InputButton.Right)
+            Debug.Log("우클릭");
     }
 
     public void OnPointerEnter(PointerEventData eventData)
