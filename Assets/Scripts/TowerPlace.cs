@@ -8,11 +8,11 @@ public class TowerPlace : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     [SerializeField] Color normal;
     [SerializeField] Color onMouse;
 
-    private Renderer renderer;
+    private Renderer render;
 
     private void Awake()
     {
-        renderer = GetComponent<Renderer>();
+        render = GetComponent<Renderer>();
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -25,11 +25,11 @@ public class TowerPlace : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        renderer.material.color = onMouse;
+        render.material.color = onMouse;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        renderer.material.color = normal;
+        render.material.color = normal;
     }
 }
