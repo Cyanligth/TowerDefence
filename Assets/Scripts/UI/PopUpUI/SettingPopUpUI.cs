@@ -20,7 +20,7 @@ public class SettingPopUpUI : PopUpUI
 
     public void OpenSettingPopUpUI()
     {
-        GameManager.UI.ShowPopUpUI<PopUpUI>("UI/ConfigPopUpUI");
+        GameManager.UI.OpenPopUpUI<PopUpUI>("UI/ConfigPopUpUI");
     }
     public void OpenExitPopUpUI()
     {
